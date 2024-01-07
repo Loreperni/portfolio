@@ -1,0 +1,58 @@
+
+/*TODO: crea css bottone darkmode*/
+.header {
+  background: var(--background);
+}
+.wrapper {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: var(--text);
+}
+
+nav {
+  position: relative;
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console,
+  Monaco, Monospace;
+}
+
+.hr-animate {
+  position: relative;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #0b546e, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 1px;
+  margin-left: clamp(3.125rem, 8%, 200px);
+  margin-right: clamp(3.125rem, 8%, 200px);
+
+  opacity: 0.5;
+  border: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 0 clamp(3.125rem, 8%, 200px) 0 clamp(3.125rem, 8%, 200px);
+}
+li {
+  padding: 0.625vw 3.125vw;
+}
+ul li {
+  display: block;
+}
+ul:hover li {
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+ul li:hover {
+  opacity: 1;
+  filter: blur(0px);
+}

@@ -4,8 +4,17 @@
     <ul>
       <li><a routerLink="" routerLinkActive="active">home</a></li>
       <li><a routerLink="contact" routerLinkActive="active">contact</a></li>
-      <li>  <button (click)="toggleDarkTheme()"></button></li>
+
+      <li><div class="BB">
+        <input (click)="toggleDarkTheme()" type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-sun fa-sm"></i>
+          <i class="fas fa-moon"></i>
+          <span class="ball"></span>
+        </label>
+      </div></li>
     </ul>
   </nav>
   <hr class="hr-animate" />
 </div>
+<!--<li>  <button (click)="toggleDarkTheme()"></button></li>-->

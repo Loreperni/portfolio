@@ -1,9 +1,12 @@
+<!--TODO: riattiva i link quando le pagine sono pronte-->
 <div class="header wrapper">
   <div class="background"></div>
   <nav>
     <ul>
-      <li><a routerLink="" routerLinkActive="active">home</a></li>
-      <li><a routerLink="contact" routerLinkActive="active">contact</a></li>
+      <li><a routerLink="" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/works" routerLinkActive="active" class="disable">Portfolio</a></li> <!--TODO: per far andare l'utente a pCode e pPhoto aggiungi il router link senza / avanti per fare in modo che non vada a /photo o /code ma segua il percorso /works/code-->
+      <li><a routerLink="/blog" routerLinkActive="active"class="disable" >Blog</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
 
       <li><div class="BB">
         <input (click)="toggleDarkTheme()" type="checkbox" class="checkbox" id="checkbox">

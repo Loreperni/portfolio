@@ -17,3 +17,8 @@ body {
   color: var(--text);
   background-color: var(--background);
 }
+.disable {
+  pointer-events: none;
+cursor: default;
+opacity: 50%;
+}

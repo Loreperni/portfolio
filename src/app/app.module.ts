@@ -9,6 +9,10 @@ import { HomepageComponent } from "./homepage/homepage.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ContactComponent } from "./contact/contact.component";
+import { BlogComponent } from "./blog/blog.component";
+import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { PCodeComponent } from "./portfolio/p-code/p-code.component";
+import { PPhotoComponent } from "./portfolio/p-photo/p-photo.component";
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import { ContactComponent } from "./contact/contact.component";
     NavBarComponent,
     FooterComponent,
     ContactComponent,
+    BlogComponent,
+    PortfolioComponent,
+    PCodeComponent,
+    PPhotoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

@@ -1,0 +1,11 @@
+.btn {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.icon-bar {
+  margin: 3px;
+  position: relative;
+}
+/*FIXME: posizionamento per l'apertura del menú*/
+/*TODO: dopo il click fai apparire il menú dall'alto */

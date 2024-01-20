@@ -1,5 +1,5 @@
 
-@import url("/src/themes/components/card.css");
+@import url("/src/themes/card.css");
 
 
 .service { padding-block-start: calc(50px + 60px); }

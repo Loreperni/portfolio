@@ -2,16 +2,17 @@
 <!--<app-p-code></app-p-code>-->
 <main>
   <article>
-    <section class="section service has-bg-image" aria-labelledby="service-label"
-      style="background-image: url('/src/assets/img/bg-chiaro.png')">
+    <section class="section service " aria-labelledby="service-label">
       <div class="container">
         <ul class="service-list">
           <!--TODO: fai in modo che tutto il container sia cliccabile-->
           <li class="card-container portfolio-card">
-            <div class="card-banner card-md" style="background-color: var(--secondary)">
-              <!--TODO: cerca una freccia da font awsome e mettila-->
-              <a href="" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
-                <div calss="ion-icon" name="arrow-forward-sharp" aria-hidden="true"></div>
+            <div class="card-banner card-md" style="background-color: hsl(177, 39%, 72%)">
+              <a routerLink="photo" routerLinkActive="active" class="btn-icon"
+                aria-label="More about Website Design for Marketing Agency Startup">
+                <div calss="ion-icon" name="arrow-forward-sharp" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </a>
               <div>
                 <h3 class="card-title title-sm">Photography</h3>
@@ -21,9 +22,12 @@
             </div>
           </li>
           <li class="card-container portfolio-card">
-            <div class="card-banner card-md" style="background-color: var(--accent)">
-              <a href="" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
-                <div calss="ion-icon" name="arrow-forward-sharp" aria-hidden="true"></div>
+            <div class="card-banner card-md" style="background-color: hsl(245, 100%, 90%)">
+              <a routerLink="code" routerLinkActive="active" class="btn-icon"
+                aria-label="More about Website Design for Marketing Agency Startup">
+                <div calss="ion-icon" name="arrow-forward-sharp" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </a>
               <div>
                 <h3 class="card-title title-sm">Web Development</h3>

@@ -2,28 +2,22 @@
   #card.css
 \*-----------------------------------*/
 
-/**
- * 
- */
-
 
 
 
 
 .card {
-  box-shadow: 0 0 0 var(--jet);
+  box-shadow: 0 0 0 ;
   display: flex;
-  transition: var(--transition-1);
+;
 }
 
-.card-md:is(:hover, :focus-within) { box-shadow: 5px 5px 0 var(--jet); }
+.card-md:is(:hover, :focus-within) { box-shadow: 5px 5px 0 ; }
 
 :is(.card-lg, .card-sm):is(:hover, :focus-within) {
-  box-shadow: 3px 3px 0 var(--jet);
+  box-shadow: 3px 3px 0 ;
 }
 
-.card,
-.card-media { border: 2px solid var(--jet); }
 
 .card-lg { padding: 25px; }
 
@@ -58,18 +52,11 @@
 }
 
 .card-media {
-  background-color: var(--white);
-  color: var(--jet);
   display: grid;
   place-items: center;
   flex-shrink: 0;
 }
 
-
-
-/**
- * RESPONSIVE CONTAINER QUERY
- */
 
 .card-container { container-type: inline-size; }
 
@@ -79,10 +66,6 @@
 }
 
 
-
-/**
- * RESPONSIVE MEDIA QUERY
- */
 
 @media (min-width: 768px) {
 

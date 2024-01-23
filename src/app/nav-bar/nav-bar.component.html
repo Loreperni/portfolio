@@ -4,10 +4,11 @@
   <nav>
     <ul>
       <li><a routerLink="" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/works" routerLinkActive="active">Portfolio</a></li> <!--TODO: per far andare l'utente a pCode e pPhoto aggiungi il router link senza / avanti per fare in modo che non vada a /photo o /code ma segua il percorso /works/code-->
+      <li><a routerLink="/works/code" routerLinkActive="active">Portfolio</a></li>
+      <!--TODO: quando sarà pronto p-photo metti routerLink="/works" per far scegliere all'utente tra code o foto (ora reindirizza a p-code)-->
       <li><a routerLink="/blog" routerLinkActive="active"class="disable" >Blog</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-
+      <!--TODO: sistema btn dark theme (è decentrato) -->
       <li><div class="BB">
         <input (click)="toggleDarkTheme()" type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="checkbox-label">

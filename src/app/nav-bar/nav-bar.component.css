@@ -6,7 +6,7 @@
 .checkbox-label {
   background-color: var(--accent);
   width: 40px;
-  height: 12.5px;
+  height: 13px;
   border-radius: 50px;
   position: relative;
   padding: 5px;
@@ -32,7 +32,7 @@
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(27px);
+  transform: translateX(26px);
 }
 
 

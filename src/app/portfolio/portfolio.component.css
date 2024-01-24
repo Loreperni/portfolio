@@ -1,5 +1,8 @@
 /* TODO: rimuovi css inutile */
 @import url("/src/themes/card.css");
+app-portfolio{
+  background-image: url('../../assets/img/bg-chiaro.png');
+}
 
 
 .service { padding-block-start: calc(50px + 60px); }

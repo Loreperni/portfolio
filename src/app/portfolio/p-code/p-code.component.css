@@ -1,6 +1,8 @@
-/*TODO: sistema colori */
+/*TODO: sistema colori e la dimensione dei font */
 
 li { list-style: none; }
+h3 {margin-bottom: 50px;}
+a {text-decoration: none;}
 
 
 /*-----------------------------------*\
@@ -57,7 +59,7 @@ li { list-style: none; }
 .portfolio-card .chip {
   background-color: hsla(19, 100%, 55%, 0.2);
   max-width: max-content;
-  color: hsl(0, 0%, 22%);
+  color: var(--text);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -129,7 +131,7 @@ li { list-style: none; }
 .title-md,
 .title-sm,
 .label-lg {
-  color: hsl(0, 0%, 22%);
+  color: var(--text);
   font-weight: 600;
   line-height: 1.2;
 }

@@ -17,6 +17,7 @@ import { PCodeComponent } from "./portfolio/p-code/p-code.component";
 import { PPhotoComponent } from "./portfolio/p-photo/p-photo.component";
 import { MenuComponent } from "./menu/menu.component";
 import { CounterComponent } from "./portfolio/p-code/counter/counter.component";
+import { WeatherComponent } from './portfolio/p-code/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CounterComponent } from "./portfolio/p-code/counter/counter.component";
     PPhotoComponent,
     MenuComponent,
     CounterComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,6 @@ import { WeatherComponent } from "./portfolio/p-code/weather/weather.component";
 
 
 const routes: Routes = [
-  { path: "test", component: WeatherComponent },
   { path: "works/photo", component: PPhotoComponent },
   { path: "works/code", component: PCodeComponent },
   { path: "works", component: PortfolioComponent },

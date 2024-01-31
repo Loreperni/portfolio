@@ -18,6 +18,9 @@ import { PPhotoComponent } from "./portfolio/p-photo/p-photo.component";
 import { MenuComponent } from "./menu/menu.component";
 import { CounterComponent } from "./portfolio/p-code/counter/counter.component";
 import { WeatherComponent } from './portfolio/p-code/weather/weather.component';
+import { ApiService } from "./portfolio/p-code/weather/Service/api.service";
+import { HttpClientModule } from "@angular/common/http";
+import { DatePipe } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -41,8 +44,9 @@ import { WeatherComponent } from './portfolio/p-code/weather/weather.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiService, DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

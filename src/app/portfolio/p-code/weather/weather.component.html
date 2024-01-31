@@ -1,10 +1,23 @@
-<div *ngIf="!weather">
-  <input type="text" placeholder="Enter location" #searchBox>
-  <button (click)="searchWeather(searchBox.value); searchBox.value='';">Search</button>
+<!-- FIXME:aggiungi le icone e fai in modo che i gradi C si mostrino bene su forecast-->
+<div>
+  <input [(ngModel)]="city" placeholder="Inserisci il nome della città">
+  <button *ngIf="showWeatherButton" (click)="getWeather()">Mostra Meteo</button>
+  <button *ngIf="showForecastButton" (click)="getForecast()">Mostra Previsioni</button>
+  <button *ngIf="showTemperatureButton" (click)="toggleTemperatureUnit()">Cambia Unità di Misura</button>
 </div>
 <div *ngIf="weather">
-  <h2>{{ weather.name }}, {{ weather.sys.country }}</h2>
-  <p>Temperature: {{ weather.main.temp }} K</p>
-  <p>Humidity: {{ weather.main.humidity }}%</p>
-  <p>Wind Speed: {{ weather.wind.speed }} m/s</p>
+  <h2>{{ weather.name }}</h2>
+  <p><i [class]="getWeatherIcon()"></i>{{ weather.weather[0].description }}</p>
+  <p>Temperatura: {{ isCelsius ? (weather.main.temp | number : '2.0-0') : convertToFahrenheit(weather.main.temp) }}°{{
+    isCelsius ? 'C' : 'F' }}</p>
+  <p>Alba: {{ convertToTime(weather.sys.sunrise) }}</p>
+  <p>Tramonto: {{ convertToTime(weather.sys.sunset) }}</p>
+</div>
+<div *ngIf="forecast">
+  <h2>Previsioni per le prossime ore</h2>
+  <div *ngFor="let item of forecast.list">
+    <p>{{ item.dt_txt | date:'short' }}: {{ item.weather[0].description }}</p>
+    <p>Temperatura: {{ isCelsius ? item.main.temp : convertToFahrenheit(item.main.temp) }}°{{ isCelsius ? 'C' : 'F' }}
+    </p>
+  </div>
 </div>
